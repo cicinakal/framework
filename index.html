@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu with Iframe</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #FC819E;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .sidebar {
+            padding-top: 10px;
+            width: 20%;
+            height: 100vh;
+            background-color: #fff;
+            float: left;
+        }
+        .menu-item {
+            padding: 9px;
+        }
+        .menu-item a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .menu-item a:hover {
+            color: #FC819E;
+            padding-left: 20px;
+            transition: all 0.3s ease
+        }
+        .content {
+            float: left;
+            width: 80%;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .footer {
+            background-color: #FC819E;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            clear: both;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @media only screen and (max-width: 768px) {
+            .sidebar {
+                width: 100%; /* Lebar sidebar diubah menjadi 100% ketika layar berukuran kecil */
+                height: auto; /* Tinggi sidebar disesuaikan secara otomatis */
+                float: none; /* Menghilangkan float */
+            }
+            .content {
+                width: 100%; /* Lebar konten diubah menjadi 100% ketika layar berukuran kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>L A N N N</h1>
+    </div>
+
+    <div class="sidebar">
+        <div class="menu-item">
+            <a href="tugas_1.html" target="contentFrame">Tugas Pertemuan 1</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_2.html" target="contentFrame">Tugas Pertemuan 2</a>
+        </div>
+        <div class="menu-item">
+            <a href="tugas_3.html" target="contentFrame">Tugas Pertemuan 3</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_4.html" target="contentFrame">Tugas Pertemuan 4</a>
+        </div>    
+        <div class="menu-item">
+            <a href="tugas_5.html" target="contentFrame">Tugas Pertemuan 5</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_6.html" target="contentFrame">Tugas Pertemuan 6</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_7.html" target="contentFrame">Tugas Pertemuan 7</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_8.html" target="contentFrame">Tugas Pertemuan 8</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_9.html" target="contentFrame">Tugas Pertemuan 9</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_10.html" target="contentFrame">Tugas Pertemuan 10</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_11.html" target="contentFrame">Tugas Pertemuan 11</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_12.html" target="contentFrame">Tugas Pertemuan 12</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_13.html" target="contentFrame">Tugas Pertemuan 13</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_14.html" target="contentFrame">Tugas Pertemuan 14</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_15.html" target="contentFrame">Tugas Pertemuan 15</a>
+        </div> 
+        <div class="menu-item">
+            <a href="tugas_16.html" target="contentFrame">Tugas Pertemuan 16</a>
+        </div> 
+    </div>
+    <div class="content">
+        <iframe src="page1.html" name="contentFrame"></iframe>
+    </div>
+
+    <div class="footer">
+        <img src="images/test3.png" alt="">
+        <p>M. MAULANA AULIA</p>
+        <p>23451035</p>
+    </div>
+</body>
+</html>
